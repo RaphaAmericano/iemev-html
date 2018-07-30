@@ -33,68 +33,205 @@
     <div class="container">
         <div class="row">
             <div class="col col-xs">
-                    <div class="card-deck">
-                            <div class="card">
-                              <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
-                              <div class="card-body">
-                                <h5 class="card-title">Usuário</h5>
-                                <form action="usuario.html" class="form-group">
+                <div class="card-deck">
+                        
+                        <div class="card">
+                            <img class="card-img-top" src="img/cliente_geriatria.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Cliente</h5>
+                                <form action="cliente.html" class="form-group">
                                     <label for="busca">Buscar</label>
                                     <input type="text" name="busca" class="form-control">
                                     <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
                                 </form>
-                                <form action="usuario.html" class="form-group">
-                                    <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                                <form action="cliente.html" class="form-group">
+                                    <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Cliente</button>
                                 </form>
-                              </div>
                             </div>
-                            <div class="card">
-                                <img class="card-img-top" src="img/cliente_geriatria.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Cliente</h5>
-                                    <form action="cliente.html" class="form-group">
-                                        <label for="busca">Buscar</label>
-                                        <input type="text" name="busca" class="form-control">
-                                        <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
-                                    </form>
-                                    <form action="cliente.html" class="form-group">
-                                        <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Cliente</button>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/anestesiologia.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Animal</h5>
+                                <form action="animal.html" class="form-group">
+                                    <label for="busca">Buscar</label>
+                                    <input type="text" name="busca" class="form-control">
+                                    <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                                </form>
+                                <form action="animal.html" class="form-group">
+                                    <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Animal</button>
+                                </form>
                             </div>
-                            <div class="card">
-                                <img class="card-img-top" src="img/anestesiologia.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Animal</h5>
-                                    <form action="animal.html" class="form-group">
-                                        <label for="busca">Buscar</label>
-                                        <input type="text" name="busca" class="form-control">
-                                        <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
-                                    </form>
-                                    <form action="animal.html" class="form-group">
-                                        <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Animal</button>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/cardiologia_iemev.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Consulta</h5>
+                                <form action="consulta.html" class="form-group">
+                                    <label for="busca[palavra]">Buscar</label>
+                                    <input type="text" name="busca" class="form-control">
+                                    <label for="busca[datamin]">Data Mínima</label>
+                                    <input type="date" name="busca[datamin]" class="form-control">
+                                    <label for="busca[datamax]">Data Máxima</label>
+                                    <input type="date" name="busca[datamax]" class="form-control">
+                                    <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                                </form>
+                                <form action="consulta.html" class="form-group">
+                                    <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Consulta</button>
+                                </form>
                             </div>
-                            <div class="card">
-                                <img class="card-img-top" src="img/cardiologia_iemev.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Consulta</h5>
-                                    <form action="consulta.html" class="form-group">
-                                        <label for="busca[palavra]">Buscar</label>
-                                        <input type="text" name="busca" class="form-control">
-                                        <label for="busca[datamin]">Data Mínima</label>
-                                        <input type="date" name="busca[datamin]" class="form-control">
-                                        <label for="busca[datamax]">Data Máxima</label>
-                                        <input type="date" name="busca[datamax]" class="form-control">
-                                        <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
-                                    </form>
-                                    <form action="animal.html" class="form-group">
-                                        <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Consulta</button>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="img/cliente_geriatria.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Exame</h5>
+                                <form action="exame.html" class="form-group">
+                                    <label for="busca">Buscar</label>
+                                    <input type="text" name="busca" class="form-control">
+                                    <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                                </form>
+                                <form action="exame.html" class="form-group">
+                                    <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Cliente</button>
+                                </form>
                             </div>
-                          </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Ficha de Atendimento</h5>
+                            <form action="ficha_atendimento.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="ficha_atendimento.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lista de Atendimento</h5>
+                            <form action="lista_atendimento.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="lista_atendimento.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Finalizar Atendimento</h5>
+                            <form action="finalizar_atendimento.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="finalizar_atendimento.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Usuário</h5>
+                            <form action="usuario.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="usuario.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Serviços</h5>
+                            <form action="servicos.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="servicos.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Relatórios</h5>
+                            <form action="relatorios.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="relatorios.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs">
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Boxes</h5>
+                            <form action="boxes.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="boxes.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="img/veterinaria_iemev.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Prontuários</h5>
+                            <form action="prontuario.html" class="form-group">
+                                <label for="busca">Buscar</label>
+                                <input type="text" name="busca" class="form-control">
+                                <buttom type="submit" class="btn btn-success btn-block">Buscar</buttom>
+                            </form>
+                            <form action="prontuario.html" class="form-group">
+                                <button type="submit" name="incluir" class="btn btn-primary btn-block">Incluir Usuário</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

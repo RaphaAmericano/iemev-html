@@ -30,17 +30,17 @@
         </div>
     </div>
     </nav>
-<!-- Lista de animais - exibir apenas em caso da tela ser acessada pela funcionalidade de busca -->
-    <div class="containter">
+<!-- Lista de Clientes - exibir apenas em caso da tela ser acessada pela funcionalidade de busca pelo nome do cliente -->
+<div class="containter">
         <div class="row justify-content-md-center">
             <div class="col col-xs col-md-auto col-md-10">
                 <form action="animal.html">
                     <div class="form-group"><label for="animal">Animais</label>
                         <select name="animal[id]" id="" class="form-control" multiple="multiple">
-                            <option value="0">Rex</option>
-                            <option value="1">Tobby</option>
-                            <option value="2">Billy</option>
-                            <option value="3">Judith</option>
+                            <option value="0">18:00 - Jorge Luiz - Rex</option>
+                            <option value="1">18:15 - Humberto Jorge Silva - Tobby</option>
+                            <option value="2">18:30 - Maria da Conceição - Billy</option>
+                            <option value="3">18:45 - Maria Bonita Araújo - Judith</option>
                         </select>
                         <button class="btn btn-success" value="selecionar" name="animal[acao]" type="submit">Selecionar</button>
                         <button class="btn btn-danger" value="excluir" name="animal[acao]" type="submit" disabled>Excluir</button>
@@ -48,9 +48,8 @@
                 </form>
             </div>
         </div>
-    </div>
 
-
+    <!--  -->
     <div class="container">
         <div class="row">
             <div class="col col-xs">
@@ -75,7 +74,7 @@
                             <div class="valid-feedback"></div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <label for="data">Data de Nascimento</label>
+                            <label for="data">Consulta</label>
                             <input type="date" name="data" class="form-control">
                             <div class="valid-feedback">Inválido</div>
                         </div>
@@ -107,7 +106,7 @@
                     <div class="form-row">
                         <div class="col-md-6">
                             <label for="cpfcliente">CPF do Cliente</label>
-                            <input class="form-control is-invalid" type="number" name="cpfcliente">
+                            <input class="form-control" type="number" name="cpfcliente">
                         </div>
                         <div class="col-md-6">
                             <label for="idatendente">ID do Atendente</label>
