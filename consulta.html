@@ -30,96 +30,101 @@
         </div>
     </div>
     </nav>
+    <!-- Por data -->
+    <div class="container">
+        <div class="row justify-content-md center">
+            <div class="col col-xs col-md-auto col-md-10">
+                <h1>Consultar agendamento por data</h1>
+                <form action="">
+                    <div class="form-group">
+                        <input class="form-control" name="data" type="date">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Localizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /por data -->
+    <div class="container">
+        <div class="row justify-content-md center">
+            <div class="col col-xs col-md-auto col-md-12">
+                <h1>Consultar agendamento por nome do cliente</h1>
+                <form action="" >
+                    <div class="form-group">
+                        <label for="">Buscar</label>
+                        <input class="form-control" type="search">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Localizar</button>
+                    <a href="cliente.html" class="btn btn-success">Adicionar Cliente</a>
+                    <a href="animal.html" class="btn btn-success">Adicionar Animal</a>
+                </form>
+            </div>
+        </div>
+    </div>
 <!-- Lista de Clientes - exibir apenas em caso da tela ser acessada pela funcionalidade de busca pelo nome do cliente -->
-<div class="containter">
+    <div class="containter">
         <div class="row justify-content-md-center">
             <div class="col col-xs col-md-auto col-md-10">
                 <form action="animal.html">
-                    <div class="form-group"><label for="animal">Animais</label>
+                    <div class="form-group"><label for="animal">Agendamentos</label>
                         <select name="animal[id]" id="" class="form-control" multiple="multiple">
                             <option value="0">18:00 - Jorge Luiz - Rex</option>
                             <option value="1">18:15 - Humberto Jorge Silva - Tobby</option>
                             <option value="2">18:30 - Maria da Conceição - Billy</option>
                             <option value="3">18:45 - Maria Bonita Araújo - Judith</option>
                         </select>
-                        <button class="btn btn-success" value="selecionar" name="animal[acao]" type="submit">Selecionar</button>
-                        <button class="btn btn-danger" value="excluir" name="animal[acao]" type="submit" disabled>Excluir</button>
+                        <button class="btn btn-success" value="selecionar" name="agendamento" type="submit">Selecionar</button>
                     </div>
                 </form>
             </div>
         </div>
-
+    </div>
     <!--  -->
     <div class="container">
         <div class="row">
             <div class="col col-xs">
+                <h1>Consultar agendamento por nome do cliente</h1>
                 <form action="">
                     <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="name" class="form-control">
-                            <div class="valid-feedback">Inválido</div>
-                        </div>
-                        <div class="col-md-2 mb-3">
-                            <label for="sexo">Sexo</label>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-imput" name="sexo" value="0">
-                                <label for="sexo" class="form-check-label">Masculino</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-imput" name="sexo" value="1">
-                                <label for="sexo" class="form-check-label">Feminino</label>
-                            </div>
-                            
-                            <div class="valid-feedback"></div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="data">Consulta</label>
-                            <input type="date" name="data" class="form-control">
-                            <div class="valid-feedback">Inválido</div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-md-3">
-                            <label for="especie">Especie</label>
-                            <input class="form-control" type="text" name="especie">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="raca">Raça</label>
-                            <input class="form-control" type="text" name="raca">
-                        </div>
-                        <div class="col-md-2">
-                            <label for="porte">Porte</label>
-                            <input class="form-control" type="text" name="porte">
-                        </div>
-                        <div class="col-md-2">
-                            <label for="pelagem">Pelagem</label>
-                            <input class="form-control" type="text" name="pelagem">
-                        </div>
-                        <div class="col-md-2">
-                            <label for="temperamento">Temperamento</label>
-                            <input class="form-control" type="text" name="temperamento">
-                        </div>
-                    </div>
-                    <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->      
-
-                    <div class="form-row">
-                        <div class="col-md-6">
-                            <label for="cpfcliente">CPF do Cliente</label>
-                            <input class="form-control" type="number" name="cpfcliente">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="idatendente">ID do Atendente</label>
-                            <input class="form-control" type="number" name="idatendente" disabled>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-3 col-xs-12 mx-auto">
+                        <div class="col-3 col-xs-12">
                             <button class="btn btn-success">Adicionar</button>
                             <button class="btn btn-warning">Editar</button>
                             <button class="btn btn-danger">Excluir</button>
                         </div>
                     </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nome_cliente">Nome do Cliente</label>
+                            <input type="text" name="nome_cliente" class="form-control">
+                            <div class="valid-feedback">Inválido</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="nome_animal">Nome do Animal</label>
+                            <select type="text" name="nome_animal" class="form-control">
+                                <option value="0">Bill</option>
+                                <option value="1">Bob</option>
+                                <option value="2">Bart</option>
+                            </select>
+                            <div class="valid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cpfcliente">CPF do Cliente</label>
+                            <input class="form-control" type="number" name="cpfcliente">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="data">Consulta</label>
+                            <!-- Exemplo: -->
+                            <input type="date" name="data" value="2018-08-25" class="form-control" disabled>
+                            <div class="valid-feedback">Inválido</div>
+                        </div>
+                        <div class="col-md-3 md-3">
+                            <label for="idatendente">ID do Atendente</label>
+                            <input class="form-control" type="number" name="idatendente" disabled>
+                        </div>
+                    </div>
+                    <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->      
                 </form>
             </div>
         </div>

@@ -30,10 +30,54 @@
         </div>
     </div>
     </nav>
+
+    <div class="container">
+        <div class="row justify-content-md center">
+            <div class="col col-xs col-md-auto col-md-10">
+                <h1>Consultar Cliente</h1>
+                <form action="" class="form-inline">
+                    <div class="form-group row">
+                        <label for="" class="col-md-2 col-form-label">Buscar</label>
+                        <div class="col-md-2">
+                                <input class="form-control" type="search">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Localizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--  -->
+    <div class="containter">
+        <div class="row justify-content-md-center">
+            <div class="col col-xs col-md-auto col-md-10">
+                <form action="animal.html">
+                    <div class="form-group"><label for="animal">Clientes</label>
+                        <select name="animal[id]" id="" class="form-control" multiple="multiple">
+                            <option value="0">Jorge Silva</option>
+                            <option value="1">Jorge Guimarães</option>
+                            <option value="2">Jorge Montenegro</option>
+                            <option value="3">Jorge Campos</option>
+                        </select>
+                        <button class="btn btn-success" value="selecionar" name="animal[acao]" type="submit">Detalhar Cliente</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  -->
     <div class="container">
         <div class="row">
             <div class="col col-xs">
+                <h1>Incluir Cliente</h1>
                 <form action="">
+                    <div class="form-row">
+                        <div class="col-3 col-xs-12">
+                            <button class="btn btn-success">Incluir</button>
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="col-md-12">
                             <label for="nome">Nome</label>
@@ -88,9 +132,7 @@
                     </div>
                     <div class="form-row">
                         <div class="col-3 mx-auto">
-                            <button class="btn btn-success">Adicionar</button>
-                            <button class="btn btn-warning">Editar</button>
-                            <button class="btn btn-danger">Excluir</button>
+                            <button class="btn btn-success">OK</button>
                         </div>
                     </div>
                 </form>
