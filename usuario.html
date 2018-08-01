@@ -34,14 +34,12 @@
 <!-- Busca -->
     <div class="container">
         <div class="row justify-content-md center">
-            <div class="col col-xs col-md-auto col-md-10">
+            <div class="col col-xs col-md-auto col-md-12 mt-2">
                 <h1>Consultar Usuário</h1>
-                <form action="" class="form-inline">
-                    <div class="form-group row">
-                        <label for="" class="col-md-2 col-form-label">Buscar</label>
-                        <div class="col-md-2">
-                                <input class="form-control" type="search">
-                        </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Buscar</label>
+                        <input class="form-control" type="search">
                     </div>
                     <button class="btn btn-primary" type="submit">Localizar</button>
                 </form>
@@ -53,44 +51,43 @@
 <!-- Select Resultados -->
 <div class="containter">
         <div class="row justify-content-md-center">
-            <div class="col col-xs col-md-auto col-md-10">
+            <div class="col col-xs col-md-auto col-md-10 mt-2">
                 <form action="animal.html">
-                    <div class="form-group"><label for="animal">Usuários</label>
+                    <div class="form-group">
+                        <label for="animal">Usuários</label>
                         <select name="animal[id]" id="" class="form-control" multiple="multiple">
                             <option value="0">Jorge Silva</option>
                             <option value="1">Jorge Guimarães</option>
                             <option value="2">Jorge Montenegro</option>
                             <option value="3">Jorge Campos</option>
                         </select>
-                        <button class="btn btn-success" value="selecionar" name="animal[acao]" type="submit">Detalhar Usuário</button>
+                        <button class="btn btn-success mt-2" value="selecionar" name="animal[acao]" type="submit">Detalhar Usuário</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 <!-- /Select Resultados -->
-
-
     <div class="container">
         <div class="row">
             <div class="col col-xs">
                 <h1>Incluir Usuário</h1>
                 <form action="">
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-3 col-xs-12">
                             <button class="btn btn-success">Incluir</button>
                             <button class="btn btn-warning">Editar</button>
                             <button class="btn btn-danger">Excluir</button>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-12">
                             <label for="nome">Nome</label>
                             <input type="text" name="name" class="form-control">
                             <div class="valid-feedback">Inválido</div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-4 mb-3">
                             <label for="cpf">CPF</label>
                             <input type="number" name="cpf" class="form-control">
@@ -107,14 +104,14 @@
                             <div class="valid-feedback">Inválido</div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-12">
                             <label for="endereco">Endereço</label>
                             <input type="text" class="form-control" name="endereco">
                             <div class="valid-feedback">Inválido</div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-6">
                             <label for="telefone">Telefone Residencial</label>
                             <input class="form-control" type="number" name="telefone">
@@ -125,7 +122,7 @@
                         </div>
                     </div>
                     <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-4">
                             <label for="ramal">Ramal</label>
                             <input class="form-control" type="number" name="ramal" maxlength="4">
@@ -144,7 +141,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-6">
                             <label for="crmv">CRMV</label>
                             <input class="form-control" type="number" name="crmv">
@@ -155,7 +152,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-6">
                             <label for="email">Email</label>
                             <div class="input-group">
@@ -170,7 +167,7 @@
                             <input class="form-control" type="number" name="idatendente" disabled>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-6">
                             <label for="" type="senha">Senha Inicial</label>
                             <div class="input-group">
@@ -181,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                             <div class="col-3 mx-auto">
                                 <button class="btn btn-success">OK</button>
                             </div>

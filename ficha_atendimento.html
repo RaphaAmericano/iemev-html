@@ -33,14 +33,12 @@
     <!-- Consulta -->
     <div class="container">
         <div class="row justify-content-md center">
-            <div class="col col-xs col-md-auto col-md-10">
+            <div class="col col-xs col-md-auto col-md-12">
                 <h1>Consultar Ficha</h1>
-                <form action="" class="form-inline">
-                    <div class="form-group row">
-                        <label for="" class="col-md-2 col-form-label">Buscar</label>
-                        <div class="col-md-2">
-                                <input class="form-control" type="search" placeholder="Nome do Cliente">
-                        </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Buscar</label>
+                        <input class="form-control" type="search" placeholder="Nome do Cliente">
                     </div>
                     <button class="btn btn-primary" type="submit">Localizar</button>
                 </form>
@@ -51,7 +49,7 @@
 <!-- Lista de animais - exibir apenas em caso da tela ser acessada pela funcionalidade de busca -->
     <div class="containter">
         <div class="row justify-content-md-center">
-            <div class="col col-xs col-md-auto col-md-10">
+            <div class="col col-xs col-md-auto col-md-10 mt-2">
                 <form action="ficha_atendimento.html">
                     <div class="form-group">
                         <label for="animal">Clientes</label>
@@ -61,7 +59,7 @@
                             <option value="2">Jorge Loureiro</option>
                             <option value="3">Jorge Mascarenhas</option>
                         </select>
-                        <button class="btn btn-success" value="selecionar" name="cliente[acao]" type="submit">OK</button>
+                        <button class="btn btn-success mt-2" value="selecionar" name="cliente[acao]" type="submit">OK</button>
                     </div>
                 </form>
             </div>
@@ -117,10 +115,10 @@
     <!-- /Lista de Fichas -->
     <div class="container">
         <div class="row">
-            <div class="col col-xs">
+            <div class="col col-xs mt-4">
                 <h1>Ficha de Atendimento</h1>
                 <form action="">
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-3 col-xs-12 col-md-auto">
                             <button class="btn btn-success">Abrir Ficha</button>
                             <button class="btn btn-primary">Detalhar</button>
@@ -129,7 +127,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-4 md-3">
                             <label for="">Status</label>
                             <input class="form-control" name="status" type="text">
@@ -145,7 +143,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-6 mb-3">
                             <label for="nome">Nome do Animal</label>
                             <input type="text" name="name" class="form-control">
@@ -170,7 +168,7 @@
                             <div class="valid-feedback">Inválido</div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-3">
                             <label for="especie">Espécie</label>
                             <input class="form-control" type="text" name="especie">
@@ -194,7 +192,7 @@
                     </div>
                     <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->      
 
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-6">
                             <label for="cpfcliente">Nome do Cliente</label>
                             <input class="form-control is-invalid" type="text" name="nomecliente">
@@ -205,7 +203,7 @@
                         </div>
                     </div>
                     
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-4">
                             <label for="telefone">Telefone Residencial</label>
                             <input class="form-control" type="number" name="telefone">
@@ -224,14 +222,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row mt-2">
                         <div class="col-md-2">
                             <label for="idatendente">Nome do Atendente</label>
                             <input class="form-control" type="text" name="nome_atendente" placeholder="Lineu Silva" disabled>
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row mt-4">
                         <div class="col-md-12">
                             <h2>Serviços</h2>
                             <table class="table table-hover">

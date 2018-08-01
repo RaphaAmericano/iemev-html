@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>IEMEV</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
 
@@ -34,16 +35,26 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-3 col-xs-12 mx-auto">
+            <div class="col-3 col-xs-12 mx-auto m-5">
                 <!-- Modificar para o servlet de acesso -->
                 <form action="administrador.html">
                     <div class="form-group">
                         <label for="usuario">Id do Usuário</label>
-                        <input class="form-control" type="text" name="usuario" placeholder="ID">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <input class="form-control" type="text" name="usuario" placeholder="ID">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" placeholder="Senha">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fas fa-key"></i>
+                            </span>
+                            <input class="form-control" type="password" name="senha" placeholder="Senha">
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Entrar</button>
                 </form>
