@@ -5,5 +5,10 @@ $cores: (
     azul:#00545f, 
     verde:#18b18e,
     turquesa: #02b18e,
-    bege: #f28b20
+    bege: #f28b20,
+    laranja: #f3891a
  );
+
+ h1 {
+     border-bottom: 3px solid map-get($cores: laranja );
+ }
