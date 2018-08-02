@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IEMEV</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="/img/logo-iemev.png" alt="">
+        </a>
+        <span class="navbar-text">Bem vindo: Fulano de tal</span>
+        <div class="float-xs-right">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+<!-- Busca -->
+    <div class="container">
+        <div class="row justify-content-md center">
+            <div class="col col-xs col-md-auto col-md-12 mt-2">
+                <h1 class="font-weight-bold">Consultar Serviço</h1>
+                <form action="">
+                    <div class="form-group">
+                        <label for="" class="col-md-2 col-form-label">Buscar categoria de serviço</label>
+                        <input class="form-control" type="search">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Localizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- /Busca -->
+<!-- Select Resultados -->
+    <div class="containter">
+        <div class="row justify-content-md-center">
+            <div class="col col-xs col-md-auto col-md-10 mt-4">
+                <form action="servico.html">
+                    <div class="form-group"><label for="servico">Serviços</label>
+                        <select name="servico[id]" id="" class="form-control" multiple="multiple">
+                            <option value="0">Exame de Fezes</option>
+                            <option value="1">Anestesia Geral</option>
+                            <option value="2">Anestesia Local</option>
+                            <option value="3">Exame de Urina</option>
+                        </select>
+                        <button class="btn btn-success mt-2" value="selecionar" name="servico[acao]" type="submit">Detalhar Serviço</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- /Select Resultados -->
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs mt-4">
+                <h1>Incluir Serviço</h1>
+                <form action="">
+                    <div class="form-row mt-2">
+                        <div class="col-3 col-xs-12">
+                            <button class="btn btn-success">Incluir</button>
+                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </div>
+                    </div>
+                    <div class="form-row mt-2">
+                        <div class="col-md-4 mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="name" class="form-control">
+                            <div class="valid-feedback">Inválido</div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="cpf">Categoria</label>
+                            <input type="number" name="cpf" class="form-control">
+                            <div class="valid-feedback">Inválido</div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="preco">Preço</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">R$</span>
+                                </div>
+                                <input class="form-control" type="number" min="0" step="0.01" name="preco">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

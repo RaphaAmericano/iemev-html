@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IEMEV</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo-iemev.png" alt="">
+        </a>
+        <span class="navbar-text">Bem vindo: Fulano de tal</span>
+        <div class="float-xs-right">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-md center">
+            <div class="col col-xs col-md-auto col-md-12 mt-2">
+            <button class="btn btn-primary">Consultar Boxes</button>
+            <button class="btn btn-primary">Incluir Novo Box</button>
+            </div>
+        </div>
+    </div>
+<!-- Lista de animais - exibir apenas em caso da tela ser acessada pela funcionalidade de busca -->
+    <div class="containter">
+        <div class="row justify-content-md-center mt-2">
+            <div class="col col-xs col-md-auto col-md-5">
+                <form action="ficha_atendimento.html">
+                    <label for="boxes">Boxes</label>
+                    <div class="form-row">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                <th scope="col">Número Box</th>
+                                <th scope="col">Número da Ficha</th>
+                                <th scope="col">Nome do Cliente</th>
+                                <th scope="col">Nome do Animal</th>
+                                <th scope="col">Data de Internação</th>
+                                <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <th scope="row">4</th>
+                                    <td>Jorge Matos</td>
+                                    <td>Otto</td>
+                                    <td><time datetime="2018-07-10">2018-07-10</time></td>
+                                    <td>Ocupado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <th scope="row">-</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td><time datetime="0000-00-00">0000-00-00</time></td>
+                                    <td>Vazio</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>8</td>
+                                    <td>João Penha</td>
+                                    <td>Peperoni</td>
+                                    <td><time datetime="2018-07-10">2018-07-10</time></td>
+                                    <td>Ocupado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-3 col-xs-12 col-md-4">
+                            <button class="btn btn-warning">Liberar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-xs col-md-auto col-md-5">
+                <form action="ficha_atendimento.html">
+                    <div class="form-group">
+                        <label for="gerenciar_boxes">Incluir Novo Box</label>
+                        <div class="form-row">
+                            <div class="col-2">
+                                <button class="btn btn-success mt-2" value="selecionar" name="gerenciar_boxes[incluir]" type="submit">Incluir</button>
+                            </div>
+                            <div class="col-4">
+                                <input class="form-control" type="number" name="gerenciar_boxes[numero]" min="1">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form action="">
+                    <div class="form-group">
+                        <label for="ocupar_boxes">Ocupar Boxes</label>
+                        <div class="form-row">
+                            <div class="col-3">
+                                <label for="" name="numero_ficha">Número da Ficha</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label for="" name="numero_box">Número do Box</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- /Lista -->
+
+</body>
+</html>

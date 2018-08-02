@@ -73,7 +73,7 @@
                             <option value="2">18:30 - Maria da Conceição - Billy</option>
                             <option value="3">18:45 - Maria Bonita Araújo - Judith</option>
                         </select>
-                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Selecionar</button>
+                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Detalhar</button>
                     </div>
                 </form>
             </div>
@@ -83,12 +83,11 @@
     <div class="container">
         <div class="row">
             <div class="col col-xs">
-                <h1>Consultar agendamento por nome do cliente</h1>
                 <form action="">
                     <div class="form-row">
                         <div class="col-3 col-xs-12 mt-2">
                             <button class="btn btn-success">Adicionar</button>
-                            <button class="btn btn-warning">Editar</button>
+                            <button class="btn btn-warning">Alterar</button>
                             <button class="btn btn-danger">Excluir</button>
                         </div>
                     </div>
@@ -120,8 +119,11 @@
                             <div class="valid-feedback">Inválido</div>
                         </div>
                         <div class="col-md-3 md-3">
-                            <label for="idatendente">ID do Atendente</label>
-                            <input class="form-control" type="number" name="idatendente" disabled>
+                            <label for="consulta">Tipo de Consulta</label>
+                            <select class="form-control" name="consulta">
+                                <option>Geriatria</option>
+                                <option>Pre Natal</option>
+                            </select>
                         </div>
                     </div>
                     <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->      

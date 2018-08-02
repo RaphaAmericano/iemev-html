@@ -66,13 +66,13 @@
             <div class="col col-xs col-md-auto col-md-10 mt-2">
                 <form action="animal.html">
                     <div class="form-group"><label for="animal">Exames</label>
-                        <select name="animal[id]" id="" class="form-control" multiple="multiple">
+                        <select name="animal[id]" class="form-control" multiple="multiple">
                             <option value="0">18:00 - Jorge Luiz - Rex</option>
                             <option value="1">18:15 - Humberto Jorge Silva - Tobby</option>
                             <option value="2">18:30 - Maria da Conceição - Billy</option>
                             <option value="3">18:45 - Maria Bonita Araújo - Judith</option>
                         </select>
-                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Selecionar</button>
+                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Detalhar</button>
                     </div>
                 </form>
             </div>
@@ -82,13 +82,22 @@
     <div class="container">
         <div class="row">
             <div class="col col-xs">
-                <h1>Consultar exame por nome do cliente</h1>
                 <form action="">
-                    <div class="form-row">
-                        <div class="col-3 col-xs-12 mt-2">
-                            <button class="btn btn-success">Adicionar</button>
-                            <button class="btn btn-warning">Editar</button>
+                    <div class="form-row mt-2">
+                        <div class="col-3 col-xs-12">
+                            <button class="btn btn-success">Incluir</button>
+                            <button class="btn btn-warning">Alterar</button>
                             <button class="btn btn-danger">Excluir</button>
+                        </div>
+                        <div class="col-3 col-xs-12">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-imput" name="pedido" value="0">
+                                <label for="pedido" class="form-check-label">Existe pedido de exame assinado.</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-imput" name="pedido" value="1">
+                                <label for="pedido" class="form-check-label">Não existe pedido de exame assinado.</label>
+                            </div>
                         </div>
                     </div>
                     <div class="form-row mt-4">
@@ -119,8 +128,12 @@
                             <div class="valid-feedback">Inválido</div>
                         </div>
                         <div class="col-md-3 md-3">
-                            <label for="idatendente">ID do Atendente</label>
-                            <input class="form-control" type="number" name="idatendente" disabled>
+                            <label for="exame">Tipo do Exame</label>
+                            <select class="form-control" name="exame">
+                                <option>Sangue</option>
+                                <option>Urina</option>
+                                <option>Fezes</option>
+                            </select>
                         </div>
                     </div>
                     <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->      

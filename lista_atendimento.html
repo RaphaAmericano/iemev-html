@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>IEMEV</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo-iemev.png" alt="">
+        </a>
+        <span class="navbar-text">Bem vindo: Fulano de tal</span>
+        <div class="float-xs-right">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-md center">
+            <div class="col col-xs col-md-auto col-md-12 mt-2">
+            <button class="btn btn-primary">Fila de Consulta</button>
+            <button class="btn btn-primary">Fila de Exame</button>
+            </div>
+        </div>
+    </div>
+<!-- Lista de animais - exibir apenas em caso da tela ser acessada pela funcionalidade de busca -->
+    <div class="containter">
+        <div class="row justify-content-md-center mt-2">
+            <div class="col col-xs col-md-auto col-md-5">
+                <form action="ficha_atendimento.html">
+                    <label for="animal">Fila</label>
+                    <div class="form-row">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                <th scope="col">Número da Ficha</th>
+                                <th scope="col">Nome do Cliente</th>
+                                <th scope="col">Nome do Animal</th>
+                                <th scope="col">Serviço</th>
+                                <th scope="col">Horário de Atendimento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Jorge Matos</td>
+                                    <td>Otto</td>
+                                    <td>Internação</td>
+                                    <td>
+                                        <input type="time" class="form-control" value="18:00" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Luiz Gomes</td>
+                                    <td>Thornton</td>
+                                    <td>Consulta</td>
+                                    <td>
+                                        <input type="time" class="form-control" value="18:15" disabled>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Ubirajara Tavares</td>
+                                    <td>the Bird</td>
+                                    <td>Internação</td>
+                                    <td>
+                                        <input type="time" class="form-control" value="18:30" disabled>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-3 col-xs-12 col-md-4">
+                            <button class="btn btn-warning">Alterar</button>
+                            <button class="btn btn-danger">Excluir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-xs col-md-auto col-md-5">
+                <form action="ficha_atendimento.html">
+                    <div class="form-group">
+                        <label for="animal">Fichas( Cliente | Animal | Serviço )</label>
+                        <select name="cliente[id]" id="" class="form-control" multiple="multiple">
+                            <option value="0">Jorge Matos | Tobby | Internação</option>
+                            <option value="1">Jorge Silva | Rufus | Consulta</option>
+                            <option value="2">Jorge Loureiro | Thor | Consulta</option>
+                            <option value="3">Jorge Mascarenhas | Judith | Consulta</option>
+                            <option value="3">Jorge Mascarenhas | Janjão | Internação</option>
+                        </select>
+                        <button class="btn btn-success mt-2" value="selecionar" name="cliente[acao]" type="submit">Incluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- /Lista -->
+
+</body>
+</html>
