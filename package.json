@@ -1,0 +1,34 @@
+{
+  "name": "iemev",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento de clinica veterinaria",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "browser-sync": "^2.24.6",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-sass": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaAmericano/iemev-html.git"
+  },
+  "keywords": [
+    "iemev",
+    "html",
+    "css",
+    "scss"
+  ],
+  "author": "Elder Solon, Marco Antonio Brandão e Raphael Americano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphaAmericano/iemev-html/issues"
+  },
+  "homepage": "https://github.com/RaphaAmericano/iemev-html#readme"
+}
