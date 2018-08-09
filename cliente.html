@@ -15,21 +15,43 @@
             <img src="/img/logo-iemev.png" alt="">
         </a>
         <span class="navbar-text">Bem vindo: Fulano de tal</span>
-        <div class="float-xs-right">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
     </div>
     </nav>
+<!-- Navbar Fixa -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarPrincipal">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Cliente <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Cadastro para Animais" href="#">Animal</a>
+            <a class="nav-item nav-link" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Administração das consultas" href="#">Consulta</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Listage de exames" href="#">Exame</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Consulta e cadastro de fichas de atendimento" href="#">Ficha de Atendimento</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Gerenciamento das listas de atendimento" href="#">Lista de Atendimento</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Finalizar os atendimentos" href="#">Finalizar Atendimento</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Administração dos usuários do sistema" href="#">Usuário</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Gerencie os sistemas" href="#">Serviços</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Emissão dos relatórios" href="#">Relatórios</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Gerencie os boxes" href="#">Boxes</a>
+            <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Administre os prontuários" href="#">Prontuários</a>
+            
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- /Navbar Fixa -->
+<!-- Jumbotrom titulo da sessao -->
+<div class="jumbotron jum_cliente">
+    <div class="container">
+        <h1 class="display-4">Cliente</h1>
+    </div>
+</div>
+
+
+<!-- Jumbotrom titulo da sessao -->
 <!-- Busca -->
     <div class="container">
         <div class="row justify-content-md center">
@@ -143,5 +165,10 @@
             </div>
         </div>
     </div>
+<!-- Scripts -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<!-- /Scripts -->
 </body>
 </html>
