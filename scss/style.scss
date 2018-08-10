@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
-//@import "~bootstrap";
+
 //Cores:
 $cores: (
     branco: #FFF,
@@ -9,11 +9,14 @@ $cores: (
     bege: #f28b20,
     laranja: #f3891a
  );
+ 
 
 $fontes: (
     dosis: 'Dosis', 
     open: 'Open Sans'
 );
+
+
 
 $imagens: (
     0:'/img/anestesiologia.jpg',
@@ -24,23 +27,32 @@ $imagens: (
     5:'/img/veterinaria_iemev.jpg'
 );
 
-h1 {
-//border-bottom: 3px solid map-get($cores: laranja );
-}
-
 h1, h2, h3, h4, h5, h6 {
+    width: fit-content;
+    color: map-get($cores , verde );
     font-family: map-get($fontes , dosis );
+    border-bottom: 3px solid map-get($cores, laranja );
 }
-
 .sticky-top {
     background-color: map-get($cores , verde );
+    .navbar-nav {
+        .link, .nav-link{
+            color: map-get($cores, branco );
+            &:hover{
+                color: transparentize(map-get($cores, laranja ), 0.8);
+            }
+        }
+    }
 }
 
 .jumbotron {
     background-size: cover;
     background-position: center;
+    border-radius: 0;
     h1{
+        border-bottom: none;
         color: map-get($cores , branco );
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     }
     &.jum_cliente {
         background-image: url(map-get($imagens, 1));
@@ -49,4 +61,3 @@ h1, h2, h3, h4, h5, h6 {
         background-image: url(map-get($imagens, 0));
     }
 }
- 
