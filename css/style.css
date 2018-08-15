@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   .sticky-top .navbar-nav .link, .sticky-top .navbar-nav .nav-link {
     color: #FFF; }
     .sticky-top .navbar-nav .link:hover, .sticky-top .navbar-nav .nav-link:hover {
-      color: rgba(243, 137, 26, 0.2); }
+      color: #f3891a; }
 
 .jumbotron {
   background-size: cover;

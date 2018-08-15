@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
         .link, .nav-link{
             color: map-get($cores, branco );
             &:hover{
-                color: transparentize(map-get($cores, laranja ), 0.8);
+                color: map-get($cores, laranja );
             }
         }
     }

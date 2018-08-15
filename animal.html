@@ -11,7 +11,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="administrador.html">
             <img src="img/logo-iemev.png" alt="">
         </a>
         <span class="navbar-text">Bem vindo: Fulano de tal</span>
@@ -32,7 +32,7 @@
     </nav>
 
 <!-- Navbar Fixa -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -175,13 +175,19 @@
                     </div>
                     <div class="form-row mt-2">
                         <div class="col-md-12">
-                            <a href="cliente.html" class="btn btn-success" disabled>Incluir novo cliente</a>
+                            <input type="submit" value="OK" class="btn btn-primary" disabled>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <nav class="navbar navbar-dark bg-dark mt-3">
+        <footer class="container">
+                <span class="navbar-text">Iemev</span>
+                <span class="navbar-text">&copy; <script> var hoje = new Date().getFullYear(); document.write(hoje);</script></span>
+        </footer>
+    </nav>
 <!-- Scripts -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
