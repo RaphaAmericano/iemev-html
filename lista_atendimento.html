@@ -114,16 +114,16 @@
                     </div>
                     <div class="form-row">
                         <div class="col-3 col-xs-12 col-md-4">
-                            <button class="btn btn-warning">Alterar</button>
-                            <button class="btn btn-danger">Excluir</button>
+                            <button class="btn btn-warning">Alterar Posição da Ficha na Fila</button>
+                            <button class="btn btn-danger mt-2">Excluir Ficha da Fila</button>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col col-xs col-md-auto col-md-5">
+            <div class="col col-xs col-md-auto col-md-5 ml-auto">
                 <form action="ficha_atendimento.html">
                     <div class="form-group">
-                        <label for="animal">Fichas( Cliente | Animal | Serviço )</label>
+                        <label for="animal">Fichas de Atendimento( Cliente | Animal | Serviço )</label>
                         <select name="cliente[id]" id="" class="form-control" multiple="multiple">
                             <option value="0">Jorge Matos | Tobby | Internação</option>
                             <option value="1">Jorge Silva | Rufus | Consulta</option>
@@ -131,13 +131,29 @@
                             <option value="3">Jorge Mascarenhas | Judith | Consulta</option>
                             <option value="3">Jorge Mascarenhas | Janjão | Internação</option>
                         </select>
-                        <button class="btn btn-success mt-2" value="selecionar" name="cliente[acao]" type="submit">Incluir</button>
+                        
                     </div>
+                    <div class="form-inline mt-2">
+                        <button class="btn btn-success" value="selecionar" name="cliente[acao]" type="submit">Incluir Ficha</button>
+                        <label for="horario" class="my-1 mr-2 ml-2">Horário do Atendimento</label>
+                        <select class="custom-select" name="horario">
+                            <option value="0">18:30</option>
+                            <option value="1">18:45</option>
+                            <option value="2">19:00</option>
+                            <option value="3">19:15</option>
+                        </select>
+                    </div>
+                    
                 </form>
             </div>
         </div>
     </div>
 <!-- /Lista -->
-
+<nav class="navbar navbar-dark bg-dark mt-3">
+    <footer class="container">
+            <span class="navbar-text">Iemev</span>
+            <span class="navbar-text">&copy; <script> var hoje = new Date().getFullYear(); document.write(hoje);</script></span>
+    </footer>
+</nav>
 <!-- Scripts --> <script src="node_modules/jquery/dist/jquery.min.js"></script> <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="js/main.js"></script> <!-- /Scripts --></body>
 </html>
