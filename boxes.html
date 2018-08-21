@@ -59,15 +59,17 @@
     <div class="container">
         <div class="row justify-content-md center">
             <div class="col col-xs col-md-auto col-md-12 mt-2">
-            <button class="btn btn-primary">Consultar Boxes</button>
-            <button class="btn btn-primary">Incluir Novo Box</button>
+                <button class="btn btn-primary">Consultar Boxes</button>
+                <button class="btn btn-success">Incluir Novo Box</button>
+                <button class="btn btn-warning">Liberar Box</button>
+                <button class="btn btn-danger">Excluir Box</button>
             </div>
         </div>
     </div>
 <!-- Lista de animais - exibir apenas em caso da tela ser acessada pela funcionalidade de busca -->
     <div class="container">
         <div class="row justify-content-md-center mt-2">
-            <div class="col col-xs col-md-auto col-md-5">
+            <div class="col col-xs col-md-auto col-md-6">
                 <form action="ficha_atendimento.html">
                     <label for="boxes">Boxes</label>
                     <div class="form-row">
@@ -112,42 +114,41 @@
                     </div>
                     <div class="form-row">
                         <div class="col-3 col-xs-12 col-md-4">
-                            <button class="btn btn-warning">Liberar</button>
-                            <button class="btn btn-danger">Excluir</button>
+                            <input class="btn btn-success" type="submit" value="OK">
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col col-xs col-md-auto col-md-5">
+            <div class="col col-xs ml-auto col-md-5">
                 <form action="ficha_atendimento.html">
                     <div class="form-group">
-                        <label for="gerenciar_boxes">Incluir Novo Box</label>
+                        <label for="gerenciar_boxes"><strong>Incluir Novo Box</strong></label>
                         <div class="form-row">
-                            <div class="col-2">
-                                <button class="btn btn-success mt-2" value="selecionar" name="gerenciar_boxes[incluir]" type="submit">Incluir</button>
-                            </div>
                             <div class="col-4">
                                 <input class="form-control" type="number" name="gerenciar_boxes[numero]" min="1">
                             </div>
+                             </div>
+                            <div class="col-4 pl-0">
+                                <button class="btn btn-success mt-2" value="selecionar" name="gerenciar_boxes[incluir]" type="submit">Incluir Box</button>
                         </div>
                     </div>
                 </form>
                 <form action="">
                     <div class="form-group">
-                        <label for="ocupar_boxes">Ocupar Boxes</label>
+                        <label for="ocupar_boxes"><strong>Ocupar Boxes</strong></label>
                         <div class="form-row">
-                            <div class="col-3">
+                            <div class="col-4">
                                 <label for="" name="numero_ficha">Número da Ficha</label>
                                 <input type="number" class="form-control">
                             </div>
-                            <div class="col-3">
+                            <div class="col-4">
                                 <label for="" name="numero_box">Número do Box</label>
                                 <input type="number" class="form-control">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col mt-2">
-                                <input type="submit" class="btn btn-success" value="Ocupar">
+                                <input type="submit" class="btn btn-success" value="Ocupar Box">
                             </div>
                         </div>
                     </div>
