@@ -38,26 +38,17 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav {
         .link, .nav-link{
             color: map-get($cores, branco );
-            &:hover{
-                color: map-get($cores, laranja );
+            &:hover, &.active{
+                color: map-get($cores, azul );
+                font-weight: bold;
             }
         }
     }
 }
 
-.jumbotron {
-    background-size: cover;
-    background-position: center;
-    border-radius: 0;
-    h1{
-        border-bottom: none;
-        color: map-get($cores , branco );
-        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-    }
-    &.jum_cliente {
-        background-image: url(map-get($imagens, 1));
-    }
-    &.jum_animal {
-        background-image: url(map-get($imagens, 0));
+footer {
+    img {
+        width: 20%;
+        margin-right: 15px;
     }
 }
