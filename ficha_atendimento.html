@@ -172,15 +172,15 @@
                     <div class="form-row mt-2">
                         <div class="col-md-4 md-3">
                             <label for="">Status</label>
-                            <input class="form-control" name="status" type="text" disabled>
+                            <input class="form-control" name="status" type="text" readonly>
                         </div>
                         <div class="col-md-4 md-3">
                             <label for="">Número Sequecial</label>
-                            <input class="form-control" name="id_ficha" type="number" disabled>
+                            <input class="form-control" name="id_ficha" type="number" readonly>
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="data">Data de Abertura</label>
-                            <input type="date" name="data_abertura" class="form-control" disabled>
+                            <input type="date" name="data_abertura" class="form-control" readonly>
                             <div class="valid-feedback">Inválido</div>
                         </div>
                     </div>
@@ -188,28 +188,28 @@
                         
                         <div class="col-md-3 mb-3">
                             <label for="data">Data de Nascimento</label>
-                            <input type="date" name="data" class="form-control" disabled>
+                            <input type="date" name="data" class="form-control" readonly>
                             <div class="valid-feedback">Inválido</div>
                         </div>
                       
 
                         <div class="col-md-3">
                             <label for="especie">Espécie</label>
-                            <input class="form-control" type="text" name="especie" disabled>
+                            <input class="form-control" type="text" name="especie" readonly>
                         </div>
                         <div class="col-md-3">
                             <label for="raca">Raça</label>
-                            <input class="form-control" type="text" name="raca" disabled>
+                            <input class="form-control" type="text" name="raca" readonly>
                         </div>
 
                         <div class="col-md-3 mb-3">
                             <label for="sexo">Sexo</label>
                             <div class="form-check">
-                                <input type="radio" class="form-check-imput" name="sexo" value="0" disabled>
+                                <input type="radio" class="form-check-imput" name="sexo" value="0" readonly>
                                 <label for="sexo" class="form-check-label">Masculino</label>
                             </div>
                             <div class="form-check">
-                                <input type="radio" class="form-check-imput" name="sexo" value="1" disabled>
+                                <input type="radio" class="form-check-imput" name="sexo" value="1" readonly>
                                 <label for="sexo" class="form-check-label">Feminino</label>
                             </div>
                             
@@ -221,15 +221,15 @@
                         
                         <div class="col-md-4">
                             <label for="porte">Porte</label>
-                            <input class="form-control" type="text" name="porte" disabled>
+                            <input class="form-control" type="text" name="porte" readonly>
                         </div>
                         <div class="col-md-4">
                             <label for="pelagem">Pelagem</label>
-                            <input class="form-control" type="text" name="pelagem" disabled>
+                            <input class="form-control" type="text" name="pelagem" readonly>
                         </div>
                         <div class="col-md-4">
                             <label for="temperamento">Temperamento</label>
-                            <input class="form-control" type="text" name="temperamento" disabled>
+                            <input class="form-control" type="text" name="temperamento" readonly>
                         </div>
                     </div>
                     <!-- Em seguida, os campos são os especiais de cada tipo de usuario do sistema -->      
@@ -237,22 +237,22 @@
                     <div class="form-row mt-2">
                         <div class="col-md-6">
                             <label for="cpfcliente">Nome do Cliente</label>
-                            <input class="form-control" type="text" name="nomecliente" disabled>
+                            <input class="form-control" type="text" name="nomecliente" readonly>
                         </div>
                         <div class="col-md-6">
                             <label for="cpfcliente">CPF do Cliente</label>
-                            <input class="form-control" type="number" name="cpfcliente" disabled>
+                            <input class="form-control" type="number" name="cpfcliente" readonly>
                         </div>
                     </div>
                     
                     <div class="form-row mt-2">
                         <div class="col-md-4">
                             <label for="telefone">Telefone Residencial</label>
-                            <input class="form-control" type="number" name="telefone" disabled>
+                            <input class="form-control" type="number" name="telefone" readonly>
                         </div>
                         <div class="col-md-4">
                             <label for="celular">Telefone Celular</label>
-                            <input class="form-control" type="number" name="celular" disabled>
+                            <input class="form-control" type="number" name="celular" readonly>
                         </div>
                         <div class="col-md-4">
                             <label for="email">Email</label>
@@ -260,14 +260,14 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">@</span>
                                 </div>
-                                <input class="form-control" type="email" name="email" disabled>
+                                <input class="form-control" type="email" name="email" readonly>
                             </div>
                         </div>
                     </div>
                     <div class="form-row mt-2">
                         <div class="col-md-2">
                             <label for="idatendente">Nome do Atendente</label>
-                            <input class="form-control" type="text" name="nome_atendente" placeholder="Lineu Silva" disabled>
+                            <input class="form-control" type="text" name="nome_atendente" placeholder="Lineu Silva" readonly>
                         </div>
                     </div>
 
@@ -294,7 +294,7 @@
                                     <td>Ubirajara Castro</td>
                                     <td><time>20/02/2018</time></td>
                                     <td>R$100,00</td>
-                                    <td><button class="btn btn-danger" disabled>Excluir</button></td>
+                                    <td><button class="btn btn-danger" readonly>Excluir</button></td>
                                     </tr>
                                     <tr>
                                     <th scope="row">2</th>
@@ -303,7 +303,7 @@
                                     <td>Vandecir Gomes</td>
                                     <td><time>10/02/2018</time></td>
                                     <td>R$200,00</td>
-                                    <td><button class="btn btn-danger" disabled>Excluir</button></td>
+                                    <td><button class="btn btn-danger" readonly>Excluir</button></td>
                                     </tr>
                                     <tr>
                                     <th scope="row">3</th>
@@ -312,19 +312,19 @@
                                     <td>Maria Eduarda Coutinho</td>
                                     <td><time>04/04/2018</time></td>
                                     <td>R$500,00</td>
-                                    <td><button class="btn btn-danger" disabled>Excluir</button></td>
+                                    <td><button class="btn btn-danger" readonly>Excluir</button></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Incluir</th>
                                         <td>
-                                            <select name="categoria" id="" class="form-control" disabled>
+                                            <select name="categoria" id="" class="form-control" readonly>
                                                 <option value="0">Vacina</option>
                                                 <option value="1">Anestesia</option>
                                                 <option value="2">Apuncultura</option>
                                             </select> 
                                         </td>
                                         <td>
-                                            <select name="servico" id="" class="form-control" disabled>
+                                            <select name="servico" id="" class="form-control" readonly>
                                                 <option value="0">Antirrábica</option>
                                                 <option value="1">Gripe</option>
                                                 <option value="2">Hepatite</option>
@@ -332,7 +332,7 @@
                                         </td>
                                         <td colspan="3"></td>
                                         <td>
-                                            <button class="btn btn-success" disabled>Incluir</button>
+                                            <button class="btn btn-success" readonly>Incluir</button>
                                         </td>
                                     </tr>
                                 </tbody>
