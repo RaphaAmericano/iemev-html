@@ -48,8 +48,7 @@
                 <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Gerencie os sistemas" href="#">Serviços</a>
                 <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Emissão dos relatórios" href="#">Relatórios</a>
                 <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Gerencie os boxes" href="#">Boxes</a>
-                <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Administre os prontuários" href="#">Prontuários</a>
-                
+                <a class="nav-item nav-link disabled" data-toggle="tooltip" data-animation="false" data-placement="bottom" title="Administre os prontuários" href="#">Prontuários</a>       
                 </div>
             </div>
         </div>
@@ -62,10 +61,10 @@
                 <h1>Consultar exame por data</h1>
                 <form action="">
                     <div class="form-group col-2 p-0">
-                            <label for="">Buscar</label>
+                            <label for="">Buscar por data</label>
                         <input class="form-control" name="data" type="date">
                     </div>
-                    <button class="btn btn-primary" type="submit">Localizar</button>
+                    <button class="btn btn-primary" type="submit">Localizar por data</button>
                 </form>
             </div>
         </div>
@@ -77,12 +76,10 @@
                 <h1>Consultar exame por nome do cliente</h1>
                 <form action="" >
                     <div class="form-group col-6 p-0">
-                        <label for="">Buscar</label>
+                        <label for="">Buscar por nome</label>
                         <input class="form-control" type="search">
                     </div>
-                    <button class="btn btn-primary" type="submit">Localizar</button>
-                    <a href="cliente.html" class="btn btn-success">Adicionar Cliente</a>
-                    <a href="animal.html" class="btn btn-success">Adicionar Animal</a>
+                    <button class="btn btn-primary" type="submit">Localizar por nome</button>
                 </form>
             </div>
         </div>
@@ -99,7 +96,7 @@
                             <option value="2">18:30 - Maria da Conceição - Billy</option>
                             <option value="3">18:45 - Maria Bonita Araújo - Judith</option>
                         </select>
-                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Detalhar</button>
+                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Detalhar Exame</button>
                     </div>
                 </form>
             </div>
@@ -111,12 +108,12 @@
             <div class="col col-xs">
                 <form action="">
                     <div class="form-row mt-2">
-                        <div class="col-3 col-xs-12">
-                            <button class="btn btn-success">Incluir</button>
-                            <button class="btn btn-warning">Alterar</button>
-                            <button class="btn btn-danger">Excluir</button>
+                        <div class="col-6 col-xs-12">
+                            <button class="btn btn-success">Incluir novo exame</button>
+                            <button class="btn btn-warning">Alterar exame</button>
+                            <button class="btn btn-danger">Excluir exame</button>
                         </div>
-                        <div class="col-3 col-xs-12">
+                        <div class="col-6 col-xs-12">
                             <label for="pedido">Pedido de Exame Assinado</label>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="pedidoUm" name="pedido" class="custom-control-input">
@@ -132,6 +129,10 @@
                         <div class="col-md-6 mb-3">
                             <label for="cpfcliente">CPF do Cliente</label>
                             <input class="form-control" type="number" name="cpfcliente">
+                            <div class="mt-2">
+                                <button type="button" class="btn btn-success">OK</button>
+                                <button type="button" class="btn btn-primary">Adicionar Cliente</button>
+                            </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="nome_animal">Nome do Animal</label>
@@ -141,6 +142,9 @@
                                 <option value="2">Bart</option>
                             </select>
                             <div class="valid-feedback"></div>
+                            <div class="mt-2">
+                                <a href="animal.html" class="btn btn-primary">Adicionar Animal</a>
+                            </div>
                         </div>
                     </div>
                     <div class="form-row mt-2">

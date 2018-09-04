@@ -60,16 +60,13 @@
         <div class="row justify-content-md center">
             <div class="col col-xs col-md-auto col-md-12 mt-2">
                 <button class="btn btn-primary">Consultar Boxes</button>
-                <button class="btn btn-success">Incluir Novo Box</button>
-                <button class="btn btn-warning">Liberar Box</button>
-                <button class="btn btn-danger">Excluir Box</button>
             </div>
         </div>
     </div>
 <!-- Lista de animais - exibir apenas em caso da tela ser acessada pela funcionalidade de busca -->
     <div class="container">
         <div class="row justify-content-md-center mt-2">
-            <div class="col col-xs col-md-auto col-md-6">
+            <div class="col col-xs col-md-auto col-md">
                 <form action="ficha_atendimento.html">
                     <label for="boxes">Boxes</label>
                     <div class="form-row">
@@ -82,6 +79,8 @@
                                 <th scope="col">Nome do Animal</th>
                                 <th scope="col">Data de Internação</th>
                                 <th scope="col">Status</th>
+                                <th scope="col">Ação</th>
+                                <th scope="col">Excluir</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -92,14 +91,18 @@
                                     <td>Otto</td>
                                     <td><time datetime="2018-07-10">2018-07-10</time></td>
                                     <td>Ocupado</td>
+                                    <td><button class="btn btn-warning">Liberar Box</button></td>
+                                    <td><button class="btn btn-danger" disabled>Excluir Box</button></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <th scope="row">-</th>
+                                    <th scope="row"><input type="number" class="form-control"></th>
                                     <td>-</td>
                                     <td>-</td>
                                     <td><time datetime="0000-00-00">0000-00-00</time></td>
                                     <td>Vazio</td>
+                                    <td><button class="btn btn-success">Ocupar Box</button></td>
+                                    <td><button class="btn btn-danger">Excluir Box</button></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
@@ -108,48 +111,23 @@
                                     <td>Peperoni</td>
                                     <td><time datetime="2018-07-10">2018-07-10</time></td>
                                     <td>Ocupado</td>
+                                    <td><button class="btn btn-warning">Liberar Box</button></td>
+                                    <td><button class="btn btn-danger" disabled>Excluir Box</button></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="form-row">
-                        <div class="col-3 col-xs-12 col-md-4">
-                            <input class="btn btn-success" type="submit" value="OK">
+                    <div class="form-row align-items-center">
+                        <div class="col-sm-3 col-md-1 my-1">
+                            <label>Nº do novo box</label>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="col col-xs ml-auto col-md-5">
-                <form action="ficha_atendimento.html">
-                    <div class="form-group">
-                        <label for="gerenciar_boxes"><strong>Incluir Novo Box</strong></label>
-                        <div class="form-row">
-                            <div class="col-4">
-                                <input class="form-control" type="number" name="gerenciar_boxes[numero]" min="1">
-                            </div>
-                             </div>
-                            <div class="col-4 pl-0">
-                                <button class="btn btn-success mt-2" value="selecionar" name="gerenciar_boxes[incluir]" type="submit">Incluir Box</button>
+                    <div class="form-row align-items-center">
+                        <div class="col-sm-3 col-md-1 my-1">
+                            <input type="number" class="form-control" placeholder="Nº">
                         </div>
-                    </div>
-                </form>
-                <form action="">
-                    <div class="form-group">
-                        <label for="ocupar_boxes"><strong>Ocupar Boxes</strong></label>
-                        <div class="form-row">
-                            <div class="col-4">
-                                <label for="" name="numero_ficha">Número da Ficha</label>
-                                <input type="number" class="form-control">
-                            </div>
-                            <div class="col-4">
-                                <label for="" name="numero_box">Número do Box</label>
-                                <input type="number" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col mt-2">
-                                <input type="submit" class="btn btn-success" value="Ocupar Box">
-                            </div>
+                        <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-success">OK</button>
                         </div>
                     </div>
                 </form>

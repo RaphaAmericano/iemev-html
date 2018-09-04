@@ -54,7 +54,7 @@
                         <label for="">Buscar por data</label>
                         <input class="form-control" name="data" type="date">
                     </div>
-                    <button class="btn btn-primary" type="submit">Localizar</button>
+                    <button class="btn btn-primary" type="submit">Localizar por data</button>
                 </form>
             </div>
         </div>
@@ -69,9 +69,8 @@
                         <label for="">Buscar por nome</label>
                         <input class="form-control" type="search">
                     </div>
-                    <button class="btn btn-primary" type="submit">Localizar</button>
-                    <a href="cliente.html" class="btn btn-success">Adicionar Cliente</a>
-                    <a href="animal.html" class="btn btn-success">Adicionar Animal</a>
+                    <button class="btn btn-primary" type="submit">Localizar por nome</button>
+                    
                 </form>
             </div>
         </div>
@@ -81,14 +80,14 @@
         <div class="row justify-content-md-center">
             <div class="col col-xs col-md-auto col-md-12 mt-2">
                 <form action="animal.html">
-                    <div class="form-group"><label for="animal">Agendamentos</label>
+                    <div class="form-group"><label for="animal">Agendamentos de Consulta</label>
                         <select name="animal[id]" id="" class="form-control" multiple="multiple">
                             <option value="0">23/02/2018 - 18:00 - Jorge Luiz - Rex</option>
                             <option value="1">10/02/2018 - 18:15 - Humberto Jorge Silva - Tobby</option>
                             <option value="2">02/03/2018 - 18:30 - Maria da Conceição - Billy</option>
                             <option value="3">15/05/2018 - 18:45 - Maria Bonita Araújo - Judith</option>
                         </select>
-                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Detalhar</button>
+                        <button class="btn btn-success mt-2" value="selecionar" name="agendamento" type="submit">Detalhar agendamento</button>
                     </div>
                 </form>
             </div>
@@ -100,16 +99,20 @@
             <div class="col col-xs">
                 <form action="">
                     <div class="form-row">
-                        <div class="col-3 col-xs-12 mt-2">
-                            <button class="btn btn-success">Incluir</button>
-                            <button class="btn btn-warning">Alterar</button>
-                            <button class="btn btn-danger">Excluir</button>
+                        <div class="col-8 col-xs-12 mt-2">
+                            <button class="btn btn-success">Incluir novo agendamento</button>
+                            <button class="btn btn-warning">Alterar agendamento</button>
+                            <button class="btn btn-danger">Excluir agendamento</button>
                         </div>
                     </div>
                     <div class="form-row mt-2">
                         <div class="col-md-6 mb-3">
                             <label for="cpfcliente">CPF do Cliente</label>
                             <input class="form-control" type="number" name="cpfcliente" readonly>
+                            <div class="mt-2">
+                                <button type="button" class="btn btn-success">OK</button>
+                                <button type="button" class="btn btn-primary">Adicionar Cliente</button>
+                            </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="nome_animal">Nome do Animal</label>
@@ -119,6 +122,9 @@
                                 <option value="2">Bart</option>
                             </select>
                             <div class="valid-feedback"></div>
+                            <div class="mt-2">
+                                <a href="animal.jsp" class="btn btn-primary">Adicionar Animal</a>
+                            </div>
                         </div>
                     </div>
                     <div class="form-row mt-2">
